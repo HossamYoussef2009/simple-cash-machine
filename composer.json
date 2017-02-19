@@ -1,0 +1,21 @@
+{
+    "name": "HossamYoussef2009/simple-cash-machine",
+    "require": {
+        "silex/silex": "~2.0",
+        "symfony/validator": "^3.1",
+        "symfony/yaml": "^3.1",
+        "monolog/monolog": "^1.21"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "dev-master",
+        "mockery/mockery": "*"
+    },
+    "autoload": {
+        "psr-0": {
+            "CashMachine\\": "src"
+        },
+        "psr-4": {
+            "CashMachine\\": "src"
+        }
+    }
+}
