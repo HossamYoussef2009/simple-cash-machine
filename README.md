@@ -67,14 +67,16 @@ curl --request GET \
  
 
 ##  B- Run PHPUnit test
+
+You can run the exist test files with
 ```
  php vendor/bin/phpunit
  ```
 
-You can run the exist test files with
- ```
- phpunit
- ```
+the result is:
+```
+OK (5 tests, 7 assertions)
+```
 
 ## TODO
 - GUI
