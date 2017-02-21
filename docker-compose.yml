@@ -1,0 +1,20 @@
+version: '3'
+services:
+  web:
+    build: docker/nginx
+    ports:
+      - "8070:80"
+    dns: 172.117.0.1
+    volumes:
+      - ./:/var/www/html
+      - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./docker/nginx/site.conf:/etc/nginx/conf.d/default.conf
+    links:
+      - php
+    extra_hosts:
+      - cash-machine.dev:127.0.0.1
+
+  php:
+    build: docker/php
+    volumes:
+      - ./:/var/www/html

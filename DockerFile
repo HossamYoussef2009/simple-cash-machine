@@ -1,0 +1,3 @@
+FROM docker/nginx
+
+MAINTAINER Hossam Youssef
